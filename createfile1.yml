@@ -1,0 +1,11 @@
+---
+- name: creating a file
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: creating a file
+    file:
+            path: /home/pritam/file1
+            state: touch
+     

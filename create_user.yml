@@ -1,0 +1,8 @@
+---
+- name: creating new user
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: creating user rakesh
+    user: name=rakesh

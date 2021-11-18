@@ -1,0 +1,11 @@
+---
+- name: create a directory
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: creating a directory
+    file:
+            path: /home/pritam/devops_dir
+            state: directory
+     

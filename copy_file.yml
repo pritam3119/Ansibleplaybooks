@@ -1,0 +1,16 @@
+---
+- name: My test playbook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: copy a file from server
+    copy:
+            src: /home/pritam/index.html
+            dest: /home/pritam
+            owner: pritam
+            group: pritam
+            mode: 0644
+
+
+     

@@ -1,0 +1,13 @@
+---
+- name: My test playbook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: installing a package
+    yum:
+        name: git
+        state: latest
+
+
+     
